@@ -12,7 +12,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>twitter-app</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>10.0-SNAPSHOT</version>
     <name>twitter-app</name>
     <description>Demo project for Spring Boot with TestNG and Selenium</description>
 
@@ -117,5 +117,15 @@
                 </configuration>
             </plugin>
         </plugins>
+         <distributionManagement>
+    <repository>
+      <id>jf-id</id>      
+      <url>http://13.232.172.34:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>jf-id</id>
+      <url>http://13.232.172.34:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
     </build>
 </project>
